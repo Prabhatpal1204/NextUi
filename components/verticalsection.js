@@ -2,7 +2,7 @@ import React from "react";
 
 const verticalsection = () => {
   return (
-    <div className="w-[88%] h-[30vh] border-2 mx-auto flex items-center gap-4 justify-around">
+    <div className="w-[88%] h-[30vh] mx-auto flex items-center gap-4 justify-around">
       <div className=" w-[250px] ">
         <h1 className=" font-bold font-mono text-4xl">EQ Beats IQ</h1>
       </div>
