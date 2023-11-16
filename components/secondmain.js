@@ -17,6 +17,7 @@ const secondmain = () => {
           backgroundRepeat: "no-repeat",
           backgroundSize: "contain",
         }}
+        viewport={{ once: true }}
         transition={{ delay: 0.6 }}
         className="w-full bg-contain bg-no-repeat h-full flex flex-col justify-center items-center"
       >
