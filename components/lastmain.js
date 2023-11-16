@@ -58,15 +58,16 @@ const lastmain = () => {
             whileInView={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.1, delay: i * 0.4 }}
             viewport={{ once: true }}
+            key={detail.id}
             className="group w-[350px] h-[200px] ease-in-out duration-500 bg-[#ffefe5] rounded-[20px] hover:h-[250px]"
           >
             <div className="p-10">
               <div className="card-body">
                 <h5 className="text-lg font-semibold ">{detail.title}</h5>
                 <ul className=" list-disc ml-6 mt-2">
-                  {detail.points.map((point) => (
+                  {detail.points.map((point, i) => (
                     <li
-                      key={details.id}
+                      key={detail.points[i]}
                       className=" font-bullet font-extralight"
                     >
                       {point}

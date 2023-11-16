@@ -1,8 +1,86 @@
 <svg width="692" height="350" viewBox="0 0 692 350" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+<style>
+#Badge{
+    opacity:0;
+animation:slide-bottom .5s ease-in-out 0.4s forwards;
+}
+#Group{
+    opacity:0;
+    animation: rotate-1 0.5s ease-in-out 0.8s forwards;
+}
+#rhombus-group{
+    opacity:0;
+    animation:  rotate-2 0.5s  ease-in-out 0.9s forwards;
+}
+#extrude-group{
+    opacity:0;
+    animation:  rotate-3 0.5s  ease-in-out 1.3s forwards;
+}
+#Group4{
+    opacity:0;
+    animation:  fade-1 0.5s  ease-in-out forwards;
+}
+#Ghost{
+    opacity:0;
+    animation:  fade-1 0.5s  ease-in-out 0.2s forwards;
+}
+@keyframes fade-1{
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+@keyframes rotate-3{
+    0%{
+        opacity:0;
+        transform:translate(100px,-60px);
+
+    }
+    100%{
+        opacity:1;
+        transform:translate(0px,0px);
+    }
+}
+
+@keyframes rotate-1{
+    0%{
+        opacity:0;
+        transform:translate(-80px,20px);
+        <!-- translateY:20px; -->
+        <!-- transform: rotate(10deg); -->
+    }
+    100%{
+        opacity:1;
+        transform:translate(0px,0px);
+    }
+}
+@keyframes rotate-2{
+    0%{
+        opacity:0;
+        transform:translate(-80px,-60px);
+        <!-- translateY:20px; -->
+        <!-- transform: rotate(10deg); -->
+    }
+    100%{
+        opacity:1;
+        transform:translate(0px,0px);
+    }
+}
+
+@keyframes slide-bottom{0%{
+    opacity:0;
+    transform:translateY(-20px)}100%{
+        opacity:1;
+        transform:translateY(0px)}}
+</style>
 <g id="Group 7">
 <g id="Group 6">
 <circle id="Ellipse 1" cx="69" cy="246" r="100" fill="#FAE8DC"/>
-<g id="Group 4">
+<g id="Group4">
 <ellipse id="Ellipse 2" cx="205.5" cy="181.5" rx="75.5" ry="78.5" fill="#F6F6FD"/>
 <circle id="Ellipse 3" cx="205" cy="181" r="60" fill="#FFFDFD"/>
 </g>

@@ -6,7 +6,20 @@ import { motion } from "framer-motion";
 const secondmain = () => {
   return (
     <div className="w-[90%] h-[90vh] mx-auto mb-10 bg-[#ffefe5] rounded-[30px]  ">
-      <div className="w-full bg-[url('/mainbgSec.svg')] bg-contain bg-no-repeat h-full flex flex-col justify-center items-center">
+      <motion.div
+        initial={{
+          background: "none",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "contain",
+        }}
+        whileInView={{
+          background: "url('/mainbgSec.svg')",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "contain",
+        }}
+        transition={{ delay: 0.6 }}
+        className="w-full bg-contain bg-no-repeat h-full flex flex-col justify-center items-center"
+      >
         <div className=" ml-[280px]">
           <motion.h2
             initial={{ y: 20, opacity: 0 }}
@@ -50,7 +63,7 @@ const secondmain = () => {
             fulfilling
           </motion.p>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

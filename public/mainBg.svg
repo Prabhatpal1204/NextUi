@@ -1,10 +1,17 @@
-<svg width="357" height="300" viewBox="0 0 357 300" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="400" height="300" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <style>
 
+    #Ellipse15{
+        animation: rotate-center 1s cubic-bezier(.47,0.000,.745,.715) both;
+        transform-origin:50% 50%;
+}
+@keyframes rotate-center{0%{transform:rotate(0)}100%{transform:rotate(90deg)}}
+
     #Ghost{
-        animation: slide-in-left 1s cubic-bezier(.47,0.000,.745,.715);
+        transform: translateX(15px);
+        animation: slide-in-left 1s cubic-bezier(.47,0.000,.745,.715) forwards;
     }
-@keyframes slide-in-left{0%{transform:translateX(-10px);opacity:0}100%{transform:translateX(0);opacity:1}}
+@keyframes slide-in-left{0%{transform:translateX(-10px);opacity:0}100%{transform:translateX(15px);opacity:1}}
 
 #Ghost3{animation:roll-in-top 2s ease-in-out 2 alternate-reverse backwards}
 
@@ -24,8 +31,8 @@
 </style>
 <g id="Group 7">
 <g id="Group 5">
-<circle id="Ellipse15" cx="186" cy="150" r="148" stroke="white" stroke-width="4" stroke-linecap="square" stroke-dasharray="6 12 18 24"/>
-<circle id="Ellipse16" cx="186" cy="149" r="102" fill="#D6CEFF"/>
+<circle id="Ellipse15" cx="200" cy="150" r="148" stroke="white" stroke-width="4" stroke-linecap="square" stroke-dasharray="6 12 18 24"/>
+<circle id="Ellipse16" cx="200" cy="150" r="102" fill="#D6CEFF"/>
 </g>
 <g id="Ghost">
 <g id="BODY2">
