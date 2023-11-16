@@ -1,0 +1,27 @@
+<svg width="354" height="283" viewBox="0 0 354 283" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 46">
+<g id="Group 45">
+<g id="Group 44">
+<g id="Group 40">
+<path id="Rectangle 11" d="M1.99835 30C1.99835 13.4315 15.4298 0 31.9984 0H320.998C337.567 0 350.998 13.4315 350.998 30V242C350.998 258.569 337.567 272 320.998 272H31.9984C15.4298 272 1.99835 258.569 1.99835 242V30Z" fill="#611BF6" fill-opacity="0.67"/>
+<path id="Vector" d="M177.869 283C372 283 353.5 283 353.5 245C353.5 121.316 274.243 26 177.869 26C81.4956 26 1.49983 121.316 1.49983 245C1.49988 293.051 -25.1295 265 177.869 283Z" fill="#BBA0F5"/>
+</g>
+<g id="Group 42">
+<g id="Group 43">
+<g id="Group 41">
+<ellipse id="Ellipse 5" cx="145" cy="154.5" rx="26" ry="25.5" fill="#D9D9D9"/>
+<circle id="Ellipse 6" cx="145" cy="155" r="14" fill="black"/>
+</g>
+<g id="ArrowCircleDown">
+<path id="Vector_2" d="M170.006 204.002C170.004 212.286 176.717 219.004 185.002 219.007C193.286 219.009 200.004 212.296 200.006 204.012" stroke="black" stroke-width="5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<g id="ArrowCircleDown_2">
+<path id="Vector_3" d="M196.5 155C196.5 156.381 197.619 157.5 199 157.5C200.381 157.5 201.5 156.381 201.5 155H196.5ZM201.5 155C201.5 148.096 207.096 142.5 214 142.5V137.5C204.335 137.5 196.5 145.335 196.5 155H201.5ZM214 142.5C220.903 142.5 226.5 148.096 226.5 155H231.5C231.5 145.335 223.665 137.5 214 137.5V142.5Z" fill="black"/>
+</g>
+<rect id="Rectangle 12" x="177" y="169" width="15" height="15" fill="black"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</svg>

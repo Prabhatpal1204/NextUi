@@ -1,29 +1,63 @@
+"use client";
+
 import React from "react";
+
+import { motion } from "framer-motion";
 import Image from "next/image";
 const thirdmain = () => {
   return (
     <div className="w-[90%] h-[90vh] mt-6 mx-auto bg-[#EEEBFE] rounded-[30px]">
       <div className="p-10">
-        <h3 className=" text-center text-lg font-mono">
+        <motion.h3
+          initial={{ y: -20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          className=" text-center text-lg font-mono"
+        >
           Let your friends, family, and co-workers (anonymously) rate your
           social skills.
-        </h3>
-        <h1 className="text-center font-play font-extrabold text-6xl p-10">
+        </motion.h3>
+        <motion.h1
+          initial={{ y: 20, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.8 }}
+          className="text-center font-play font-extrabold text-6xl p-10"
+        >
           Ever wondered what others think of you?
-        </h1>
+        </motion.h1>
       </div>
       <div className=" w-[80%]  mx-auto flex justify-around items-center relative">
-        <div className="flex flex-col justify-center items-center h-[150px] z-10">
+        <motion.div
+          initial={{ x: -40, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4 }}
+          className="flex flex-col justify-center items-center h-[150px] z-10"
+        >
           <Image src="/num1.svg" height={50} width={50} alt={" "} />
           <p className="w-[250px]">Answer questions on your social skills</p>
-        </div>
-        <div className="flex flex-col justify-center items-center h-[150px] z-10">
+        </motion.div>
+        <motion.div
+          initial={{ x: -40, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4, delay: 0.6 }}
+          className="flex flex-col justify-center items-center h-[150px] z-10"
+        >
           <Image src="/num2.svg" alt={" "} height={50} width={50} />
           <p className="w-[250px]">
             Let others anonymously answer the same question about you
           </p>
-        </div>
-        <div className="flex flex-col justify-center items-center h-[150px] z-10">
+        </motion.div>
+        <motion.div
+          initial={{ x: -40, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4, delay: 1.6 }}
+          className="flex flex-col justify-center items-center h-[150px] z-10"
+        >
           <Image
             src="/num3.svg"
             alt={" "}
@@ -36,16 +70,31 @@ const thirdmain = () => {
             Find out where you and others see things the same way - and where
             not!
           </p>
-        </div>
-        <hr className=" w-[70%] mx-auto border-dashed border-2 border-[#F3A60F]  absolute top-[31%]" />
+        </motion.div>
+        <motion.hr
+          initial={{ scaleX: 0 }}
+          whileInView={{ scaleX: "100%" }}
+          viewport={{ once: true }}
+          style={{ originX: 0 }}
+          transition={{ duration: 2 }}
+          className=" w-[70%] mx-auto border-dashed border-2 border-[#F3A60F]  absolute top-[31%]"
+        />
       </div>
-      <Image
-        src="/thinking.svg"
-        height={250}
-        width={250}
-        alt={" "}
-        className="ml-[40%] mt-4"
-      />
+      <motion.div
+        initial={{ x: -40, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.4, delay: 2.1 }}
+      >
+        {" "}
+        <Image
+          src="/thinking.svg"
+          height={250}
+          width={250}
+          alt={" "}
+          className="ml-[40%] mt-4"
+        />
+      </motion.div>
     </div>
   );
 };

@@ -1,13 +1,20 @@
+"use client";
 import React from "react";
 import { Button } from "./ui/button";
 import Image from "next/image";
+import { motion } from "framer-motion";
 const navbar = () => {
   return (
-    <header className="bg-white sticky top-0 z-30 h-[60px] ">
-      <nav className="flex justify-between items-center w-[92%] mt-2 mx-auto">
+    <div className="bg-white sticky top-0 z-30 h-[60px] ">
+      <motion.nav
+        initial={{ y: -100 }}
+        animate={{ y: 0 }}
+        transition={{ duration: 0.6 }}
+        className="flex justify-between items-center w-[92%] mt-2 mx-auto"
+      >
         <div>
           <Image
-            src="/images/logo.png"
+            src="/images/logo.svg"
             width={60}
             height={20}
             alt={"logo"}
@@ -41,8 +48,8 @@ const navbar = () => {
         <div className="flex items-center gap-6">
           <Button size="sm">Download App</Button>
         </div>
-      </nav>
-    </header>
+      </motion.nav>
+    </div>
   );
 };
 
